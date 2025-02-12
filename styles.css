@@ -1,0 +1,313 @@
+body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 56px; /* 56px es la altura del navbar */
+    padding-bottom: 35px; /* 35px es la altura del footer */ 
+    width: 90%;
+    margin: auto;
+}
+
+.nameNotium {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700; 
+}
+
+.navbar {
+    height: 56px;
+    width: 83%;
+    margin: auto;
+}
+
+.navbar .btn {
+    font-size: 0.9rem;
+    font-weight: 100;
+    padding: 0 10px;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-link{
+    font-size: 0.4rem !important;
+    font-weight: 500 !important;
+    color: #000000  !important;
+    padding: 0 10px     !important;
+}
+
+.logo {
+    width: 19px;
+    height: auto;
+}
+
+.content { /* clase para que el contenido principal no quede tapado por el navbar o el footer */
+    min-height: calc(100vh - 96px);
+    padding: 20px;
+}
+.bienvenida{
+    padding: 0px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.descripcion {
+    font-size: 1.04rem;
+    font-weight: 100;
+}
+
+.td-descripcion {
+    max-width: 200px;
+}
+
+.container-registro .container-login, .container-politicas, .container-add-tarea {
+    width: 65% !important;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+}
+
+.container-filtro {
+    overflow: hidden; /* Evita el desbordamiento */
+    max-width: 80%; /* Asegura que no se salga del contenedor */
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap; /* Permite que pasen a la siguiente línea si no caben */
+    gap: 3px; /* Espacio entre botones */
+    justify-content: flex-start; /* Asegura que se alineen a la izquierda */
+}
+
+.btn-group label {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    padding: 5px 10px; /* Ajusta el tamaño de los botones */
+}
+
+.container-ver-tareas {
+    width: 90% !important;
+    margin: auto;
+    align-content: center;
+}
+
+.izquierda {
+    flex: 20%;
+    max-width: 20%;
+}
+
+.fechas {
+    width: 100%;
+    height: 30px;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.derecha {
+    flex: 80%;
+    max-width: 80%;
+}
+
+.col-md-7 {
+    width: 100% !important;
+    max-width: 100% !important;
+
+}
+.table td, .table th {
+    padding: 0.25rem;
+}
+thead {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    background-color: #e0e0e0;
+}
+
+tr{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 100;
+    height: 30px;
+}
+
+.button-eliminar {
+    align-items: center;
+}
+
+.badge{
+    font-size: 0.65rem;
+    padding: 5px !important;
+    /*margin: 3px !important;*/
+    font-weight: 400 !important;
+    font-weight: 400 !important;
+    height: 100%;
+}
+.urgente {
+    background-color: #d3ab87 ;
+    color: #ffffff;
+}
+
+.personal {
+    background-color: #c1b4cf;
+    color: #ffffff;
+}
+
+.trabajo {
+    background-color: #779b99;
+    color: #ffffff;
+}
+
+.ocio {
+    background-color: #9bbda4;
+    color: #ffffff;
+}
+
+.pendiente {
+    background-color: #db9b97;
+    color: #ffffff;
+}
+
+.en-progreso {
+    background-color: #c7b782;
+    color: #ffffff;
+}
+
+.finalizada {
+    background-color: #8dc09f;
+    color: #ffffff;
+}
+
+.badge-tag, .badge-estado{
+    font-size: 0.65rem;
+    /*padding: 5px;*/
+    font-weight: 400 !important;
+    font-weight: 400 !important;
+}
+
+.filtro{
+    width:auto;
+}
+
+.container-filtro{
+    width: 100%;
+    align-items: center;
+}
+
+.form-control{
+    font-size: 0.7rem;
+    font-weight: 100;
+    height: 30px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+/* Estilo de la tag sin haberlo seleccionado)*/
+label.badge-tag {
+    background-color: var(--tag-color); /* Usa la variable CSS con el color */
+    color: #ffffff;
+}
+
+/* Estilo de la tag cuando se ha hecho clic sobre ella (seleccionada) */
+input[type="radio"]:checked + label.badge-tag {
+    background-color: rgb(0, 0, 0) !important;
+    color: #ffffff !important;
+}
+
+
+
+.alertas, .alert{
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.form-centrado{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.politicas-privacidad {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.btn-sincuenta, .btn-concuenta {
+    color: #000000;
+    font-size: 0.8rem;
+}
+
+.btn-sincuenta:hover, .btn-concuenta:hover{
+    color: #444444;
+    text-decoration: underline;
+}
+
+.btn-dark{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.badge badge-light {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+ul, li, a, label, input, ::placeholder{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+label{
+    padding-top: 5px;
+    padding-bottom: 0 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+input, ::placeholder {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+p, span, div {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100; 
+}
+
+footer {
+    height: 35px;
+    margin: auto;
+    background-color: rgb(235, 235, 235, 0.8);
+}
+footer p {
+    font-size: 0.75rem;
+    font-weight:400;
+    text-align: center;
+}
