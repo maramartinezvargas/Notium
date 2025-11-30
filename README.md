@@ -1,59 +1,28 @@
+<h1 align="center">Notium</h1>
 
-# Notium
-
-Aplicación web de gestión de tareas desarrollada para la asignatura de **Programación** del **Grado Superior en Desarrollo de Aplicaciones Multiplataforma**.
-Permite **registrar usuarios, iniciar sesión y gestionar tareas** mediante un sistema CRUD completo: creación, edición (con modal), filtrado y eliminación.
+<p align="center">Aplicación web de gestión de tareas desarrollada para la asignatura de <br><strong>Programación</strong> del <strong>Grado Superior en Desarrollo de Aplicaciones Multiplataforma</strong>. <br>Permite <strong>registrar usuarios, iniciar sesión y gestionar tareas</strong> mediante un sistema CRUD completo:<br>creación, edición (con modal), filtrado y eliminación.
+</p>
+<p align="center">
+  <img src="./screenshoots/inicio.png" width="650">
+</p>
 
 ## Tecnologías utilizadas
 
-* **PHP 8+**
-* **MySQL**
-* **Bootstrap 4.5**
-* **HTML5 + CSS3**
-* **XAMPP / Apache**
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8.0+-777BB4?logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bootstrap-4.5-7952B3?logo=bootstrap&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/XAMPP-Localhost-FB7A24?logo=xampp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache-Server-D22128?logo=apache&logoColor=white" />
+</p>
 
 ## Funcionalidades principales
 
 ### Autenticación
 
-* Registro con contraseña encriptada.
-* Inicio de sesión mediante cookie.
-* Redirecciones automáticas según sesión activa.
-* Cierre de sesión con borrado de cookies.
-
-### Gestión de tareas
-
-* Crear nuevas tareas con:
-
-  * Título
-  * Descripción
-  * Fecha de inicio y fin
-  * Lugar
-  * Tag (categoría con color)
-  * Estado (Pendiente, En progreso, Finalizada)
-* Listado de tareas con:
-
-  * Tags coloreados dinámicamente desde BD.
-  * Estados con badges personalizados.
-  * Formateo de fechas (dd-mm-yyyy).
-* Edición mediante **modal de Bootstrap**.
-* Eliminación de tareas.
-
-### Filtro avanzado
-
-Permite filtrar por:
-
-* Estado
-* Tag
-* Rango de fechas
-
-Incluye botón para limpiar los filtros.
-
-## Capturas de pantalla
-
-<p align="center">
-  <img src="./screenshoots/inicio.png" width="650">
-</p>
+El sistema permite registrar usuarios y acceder mediante sesión persistente con cookies.
 
 <p align="center">
   <img src="./screenshoots/registro.png" width="650">
@@ -63,6 +32,19 @@ Incluye botón para limpiar los filtros.
   <img src="./screenshoots/login.png" width="650">
 </p>
 
+Características:
+
+* Registro con contraseña encriptada.
+* Inicio de sesión mediante cookie.
+* Redirecciones según sesión activa.
+* Cierre de sesión con borrado de cookies.
+
+---
+
+### Gestión de tareas
+
+Pantalla principal del usuario con las tareas listadas dinámicamente.
+
 <p align="center">
   <img src="./screenshoots/tareas_limpio.png" width="650">
 </p>
@@ -71,15 +53,46 @@ Incluye botón para limpiar los filtros.
   <img src="./screenshoots/tareas.png" width="650">
 </p>
 
+Permite:
+
+* Crear nuevas tareas con:
+
+  * Título, descripción, fechas, lugar
+  * Tag (color asociado)
+  * Estado (Pendiente / En progreso / Finalizada)
+* Listado con:
+
+  * Tags coloreados desde BD
+  * Badges por estado
+  * Fechas DD-MM-YYYY
+* Edición mediante modal de Bootstrap
+* Eliminación de tareas
+
+#### Añadir tarea
+
 <p align="center">
   <img src="./screenshoots/add.png" width="650">
 </p>
+
+#### Editar tarea
 
 <p align="center">
   <img src="./screenshoots/editar.png" width="650">
 </p>
 
+---
 
+### Filtro avanzado
+
+Incluye filtrado por:
+
+* Estado
+* Tag
+* Rango de fechas
+
+Además incorpora un botón de **limpiar filtros** para restaurar la vista general.
+
+(No incluyes captura específica de filtros; si quieres, la añadimos.)
 
 ---
 
@@ -107,7 +120,7 @@ Importar desde consola:
 mysql -u root -p notium < notium.sql
 ```
 
-El archivo incluye:
+Incluye:
 
 * Tabla `usuarios`
 * Tabla `tags`
@@ -119,7 +132,7 @@ El archivo incluye:
 Editar `conexion.php` si es necesario:
 
 ```php
-$conexion = new mysqli("127.0.0.1", "root", "campusfp", "notium");
+$conexion = new mysqli("127.0.0.1", "USER", "PASS", "DATABASE_NAME");
 ```
 
 ### 4. Ejecutar el proyecto
@@ -136,15 +149,14 @@ http://localhost/notium/
 
 ```
 /
-├── img/                # Imágenes, iconos y capturas
-├── index.php           # Página de inicio, registro y login
-├── tareas.php          # CRUD completo de tareas
-├── conexion.php        # Conexión MySQL
-├── navbar.php          # Barra de navegación
-├── footer.php          # Footer fijo
-├── politicas.php       # Políticas de privacidad
-├── styles.css          # Estilos personalizados
-└── notium.sql          # Base de datos completa
+├── index.php            # Registro y login
+├── tareas.php           # CRUD completo de tareas
+├── conexion.php         # Conexión MySQL
+├── navbar.php           # Barra de navegación
+├── footer.php           # Footer fijo
+├── politicas.php        # Políticas de privacidad
+├── styles.css           # Estilos personalizados
+└── notium.sql           # Base de datos completa
 ```
 
 ---
