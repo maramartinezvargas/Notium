@@ -51,13 +51,35 @@ Incluye botón para limpiar los filtros.
 
 ## Capturas de pantalla
 
-![Pantalla de inicio](.screenshoots/inicio.png)
-![Registro](./screenshoots/registro.png)
-![Login](./screenshoots/login.png)
-![Dashboard de tareas vacío](./screenshoots/tareas_limpio.png)
-![Dashboard con tareas](./screenshoots/tareas.png)
-![Añadir tarea](./screenshoots/add.png)
-![Editar tarea](./screenshoots/editar.png)
+<p align="center">
+  <img src="./screenshoots/inicio.png" width="650">
+</p>
+
+<p align="center">
+  <img src="./screenshoots/registro.png" width="650">
+</p>
+
+<p align="center">
+  <img src="./screenshoots/login.png" width="650">
+</p>
+
+<p align="center">
+  <img src="./screenshoots/tareas_limpio.png" width="650">
+</p>
+
+<p align="center">
+  <img src="./screenshoots/tareas.png" width="650">
+</p>
+
+<p align="center">
+  <img src="./screenshoots/add.png" width="650">
+</p>
+
+<p align="center">
+  <img src="./screenshoots/editar.png" width="650">
+</p>
+
+
 
 ---
 
